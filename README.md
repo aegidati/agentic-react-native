@@ -23,7 +23,7 @@ app/client
 - React Native project setup (Expo)
 - TypeScript configuration
 - React Navigation for routing
-- Jest and React Native Testing Library
+- Jest-based smoke test setup
 - Mobile app structure for UI development
 - Basic screen and component organization
 
@@ -53,3 +53,33 @@ Typical runtime prerequisites:
 - iOS Simulator (macOS) or Android Emulator
 - Physical device (optional, via Expo app)
 - Optional Docker runtime for integration scenarios
+
+---
+
+## Development
+
+Start the Expo development server with:
+
+```bash
+npm run dev
+```
+
+---
+
+## Validation
+
+Run the starter quality checks from `app/`:
+
+```bash
+npm install
+npm run type-check
+npm run lint
+npm test -- --runInBand
+npm run build
+```
+
+The build command exports the web bundle using Expo:
+
+```bash
+expo export --platform web
+```

@@ -41,6 +41,10 @@ jobs:
         working-directory: app
         run: npm test -- --coverage
 
+      - name: Run build
+        working-directory: app
+        run: npm run build
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:

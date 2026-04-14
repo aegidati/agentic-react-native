@@ -34,7 +34,7 @@ Contains:
 - React Native project with Expo
 - TypeScript configuration
 - React Navigation setup
-- Test framework (Jest + React Native Testing Library)
+- Jest-based smoke test setup
 - Basic app structure
 
 ---
@@ -113,10 +113,14 @@ npx expo start
 
 ## Build
 
-Build for iOS/Android with:
+Build the starter web bundle with:
 
 ```bash
 npm run build
-# or
-npx expo build
+```
+
+Current build implementation:
+
+```bash
+expo export --platform web
 ```

@@ -1,7 +1,7 @@
 {
   "name": "react-native",
   "version": "0.1.0",
-  "description": "React Native mobile starter (Expo + TypeScript + React Navigation + Jest)",
+  "description": "React Native mobile starter (Expo + TypeScript + React Navigation + Jest smoke tests)",
   "entry": "app",
   "stack": {
     "runtime": "node>=20",
@@ -9,6 +9,7 @@
     "language": "typescript",
     "framework": "react-native",
     "router": "react-navigation",
-    "test": "jest"
+    "test": "jest",
+    "build": "expo export --platform web"
   }
 }

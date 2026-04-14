@@ -24,13 +24,14 @@ Required files:
 
 ```
 app/
+  App.tsx               (Expo entry point)
   package.json          (npm dependencies and scripts)
   tsconfig.json         (TypeScript configuration)
   metro.config.js       (Metro bundler configuration)
   app.json              (Expo configuration)
   .env.example          (Environment variables template)
   src/
-    App.tsx             (Root component)
+    App.tsx             (Root application component)
     screens/            (Screen components)
     components/         (Reusable components)
     navigation/         (Navigation setup)
@@ -46,9 +47,9 @@ Must include:
 - `react` ≥18.2.0
 - `react-native` ≥0.72.0
 - `expo` ≥50.0.0
-- `react-navigation` ≥6.1.0
-- `typescript` ≥5.1.0
-- `jest` and test libraries
+- `@react-navigation/native` and `@react-navigation/native-stack`
+- `typescript` compatible with current eslint toolchain
+- `jest` for smoke tests
 - Scripts: `dev`, `build`, `lint`, `type-check`, `test`
 
 ### app.json
@@ -111,7 +112,7 @@ Must define:
 - `type`: frontend
 - `installsInto`: app/client
 - `ownedPaths`: [app/client]
-- `requires`: node-runtime, frontend-package-manager, react-native-cli
+- `requires`: node-runtime, frontend-package-manager, expo-cli
 - `postInstallChecks`: validation commands
 - `tags`: appropriate tags for discovery
 
@@ -155,3 +156,5 @@ After installation, verify:
 6. Build completes: `npm run build`
 
 All commands must run from the `app/` directory.
+
+The current build command is `expo export --platform web`.

@@ -24,11 +24,11 @@ provides:
 requires:
   - node-runtime
   - frontend-package-manager
-  - react-native-cli
+  - expo-cli
 
 postInstallChecks:
   - dependencies install successfully
-  - build command runs (npx expo build)
+  - build command runs (npx expo export --platform web)
   - lint command runs
   - type-check command runs
   - test command runs
