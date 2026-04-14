@@ -57,7 +57,7 @@ None.
 
 Node.js ≥20  
 React Native 0.72+  
-Expo SDK 50+  
+Expo SDK 55+  
 Jest for unit testing
 
 ---

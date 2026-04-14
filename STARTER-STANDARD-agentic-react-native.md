@@ -46,7 +46,7 @@ Must include:
 
 - `react` ≥18.2.0
 - `react-native` ≥0.72.0
-- `expo` ≥50.0.0
+- `expo` ≥55.0.0
 - `@react-navigation/native` and `@react-navigation/native-stack`
 - `typescript` compatible with current eslint toolchain
 - `jest` for smoke tests
